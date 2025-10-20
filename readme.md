@@ -152,13 +152,13 @@ He introducido una
 
 #### 7. realizar_compra()
 
-1. ¿Qué necesitamoos? 
+1. ¿Qué nos piden? 
 
    - Preguntar al cliente dándole a elegir de una lista  qué productos desea comprar y qué cantidad.
 
    - Una vez elegidos actualizar stock y mostrar al cliente su carrito y el precio de lo que ha comprado.
 
-   2. ¿Qué necesitamos? 
+2. ¿Qué necesitamos? 
 
       - Primero dos variables vacias donde introduciremos los productos que el cliente desea y el precio total de su compra.
 
@@ -179,3 +179,65 @@ He introducido una
 
    - Deberemos escribir en un cuadro de codigo 
    ***realizar_compra()*** Y simplemente contestar a las preguntas de elección de artículo y cantidad.
+
+
+
+## Ejercicios bonus:
+
+#### 1. procesar_pago()
+
+
+1. ¿Qué nos piden?
+
+   - Pedir al cliente que escriba la cantidad que debe pagar y la que está pagando. Comprobar si el pago es suficiente y en caso afirmativo mostrar un mensaje de confirmación y cuanto le debe ser devuelto. En caso negativo indicar al cliente cuanto más debe abonar.
+   - Subsanar errores de tecleo.
+
+2. ¿Qué necesitamos?
+
+   - Dos variables para introducir un imput y guardar las cantidades a pagar y lo que se ha pagado.
+
+   - Condicionales is, elif y else para interaccionar con el cliente mediante print e informarle de si su pago es o no correcto y cuanto se le devuelve..
+
+   - try except para subsanar errores si el cliente introduce una respuesta no válida como por ejemplo si introduce el string & junto al precio o si pone , en vez de . para los decimales (las cantidades negativas las subsanamos con un if <>).
+
+
+3. ¿Como usarlo?
+
+   - Deberemos escribir en un cuadro de codigo 
+   ***procesar_pago()*** Y simplemente contestar a las preguntas de elección de artículo y cantidad.
+
+
+#### 2. agregar_cliente(nombre, email)
+
+1. ¿Qué nos piden?
+
+   - Agregar un cliente al diccionario **clientes** introduciendo SOLO las variables ***nombre** y **email** con la complicación de que no introducimos la variable **compras** que es también una lista.
+
+2. ¿Qué necesitamos?
+
+   - Usaremos un if para ver si el nombre ya está en el diccionario **clientes**.
+
+      - si está: devolvemos un mensaje de cliente ya está en **inventario**
+
+      - Si no: else.
+
+    - Dentro del else usaremos un .update en la variable **clientes** para volcar el nuevo cliente allí.
+
+    - IMPORTANTE : dejaremos la variable **compras** vacía en la función [] para decirle que la incluya como lista vacía.
+
+
+### 3. ver_clientes()
+
+1. ¿Qué nos piden?
+
+   - Que mostremos un diccionario de clientes en la que aparezca nombre: email, con la complicación de que la key email está como producto dentro de otro diccionario, hay que sacarla para trabajar con ella.
+
+2. ¿Qué necesitamos?
+
+   - Cear un diccionario vacío donde volcar los clientes y los emails.
+   
+   - Un bucle for para recorrer el diccionario y para obtener las keys usaremos un .items
+
+   - introducimos en el diccionario los nombres y los emails.
+
+   - Por último imprimimos el diccionario que hemos creado previamente
